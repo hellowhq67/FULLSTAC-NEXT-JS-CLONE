@@ -2,16 +2,17 @@ import Blogs from '@/componet/Blogs'
 import Card from '@/componet/Card'
 import Navbar from '@/componet/Navbar'
 import Section from '@/componet/Section'
-import Homes from '@/pages/Homes'
-export default function Home() {
+import Home from '@/componet/Home'
+
+export default function index() {
   return (
     <>
 
       <Navbar />
-      <Homes />
-      <Blogs/>
-      <Card/>
-      <Section/>
+     <Home/>
+      <Blogs />
+      <Card />
+      <Section />
 
     </>
   )
