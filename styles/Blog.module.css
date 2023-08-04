@@ -1,0 +1,51 @@
+.blogcard {
+  width: 28rem;
+  height: 25rem;
+  background-color: var(--gray1);
+  border: 1px solid var(--gray5);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0px 10px;
+}
+
+.title {
+  color: var(--gray12);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+
+.desc {
+  font-size: 14px;
+  color: var(--gray9);
+}
+
+.image img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.cardDesc {
+  padding: 20px;
+  width: 100%;
+}
+.heading{
+  text-align: center;
+  font-size: 1.9rem;
+  margin: 1rem 0px;
+
+}
+.subheading{
+  font-weight: 400;
+  color: var(--gray9);
+  font-size: 1.7rem;
+  
+}
+@media (max-width:750px) {
+
+  .blogcard{
+    width: 100%;
+    margin: 20px 0px;
+  }
+  
+}

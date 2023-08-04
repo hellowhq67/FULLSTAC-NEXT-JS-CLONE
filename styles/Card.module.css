@@ -1,0 +1,40 @@
+.card{
+    width: 20rem;
+    height: 12em;
+    border: 1px solid var(--gray4);
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: inset 0px 1px 1px rgba(157, 157, 157, 0.34);
+}
+.cardimg{
+    width: 2rem;
+    height: 100%;
+}
+.title{
+    margin: 10px 0px;
+    font-weight: 500;
+}
+.heading{
+    font-size: 2.4rem;
+    margin: 2rem;
+    font-weight: 800;
+   
+    background-image: linear-gradient(180deg, #6a6262, #000000);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+.desc{
+    font-size: .8rem;
+}
+@media (max-width:750px) {
+    .heading{
+        font-size: 1.8rem;
+        font-weight: 800;
+        text-align: center;
+    }
+    
+}

@@ -1,0 +1,34 @@
+.logo {
+  width: 90px;
+}
+.search {
+  background-color: var(--gray4);
+  padding: 8px 28px;
+  display: flex;
+  align-items: start;
+  font-size: 12px;
+  border-radius: 10px;
+  color: var(--gray9);
+  
+}
+.searchbar {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid var(--gray7);
+  background-color: transparent;
+}
+.close {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .search {
+    display: none;
+  }
+  .close {
+    display: block;
+    position: absolute;
+    right: 3%;
+  }
+}

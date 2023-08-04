@@ -1,0 +1,116 @@
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  position: relative;
+  padding: 4rem;
+}
+
+.span {
+  color: var(--gray7) !important;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 0px 20px;
+}
+.lists {
+  background-color: #8685853e;
+  padding: 3px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.border {
+  width: 90%;
+
+  height: 1px;
+  position: absolute;
+  top: 10%;
+  border: 0.3px dashed rgba(0, 0, 0, 0.389);
+}
+
+.desc {
+  color: var(--gray9);
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 20px 0px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 800;
+  position: absolute;
+  top: 0%;
+  background-image: linear-gradient(180deg, #6a6262, #000000);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.cardCol {
+  width: 40vw;
+  margin: 0px 20px;
+}
+.card {
+  width: 14rem;
+  max-height: 400px;
+  background-color: var(--gray2);
+  border: 1px solid var(--gray4);
+  box-shadow: inset 0px 1px 1px rgba(128, 128, 128, 0.594);
+}
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray12);
+}
+.cardDesc {
+  font-size: 14px;
+  color: var(--gray9);
+}
+.card img {
+  object-fit: contain;
+  width: 100%;
+}
+
+@media (max-width: 750px) {
+  .section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0px;
+  }
+  .card{
+    width: 11rem;
+  }
+  .desc {
+    font-size: 0.9em;
+    
+  }
+   .cardCol{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+   }
+  .contentCol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3rem;
+    
+  }
+  .lists{
+    font-size: 11px;
+  }
+}
