@@ -11,7 +11,7 @@ export default function Page() {
   const [content, setContent] = useState([])
   useEffect(() => {
 
-    axios.get('http://localhost:3000/api/install')
+    axios.get('https://fullstac-next-js-clone-eiet.vercel.app/api/install')
       .then((res) => setContent(res.data))
       .catch((err) => console.log(err))
 
