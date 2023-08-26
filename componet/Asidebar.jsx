@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import styles from "@/styles/Aisde.module.css";
 import Link from "next/link";
-import { AiOutlineMenuUnfold } from "react-icons/ai";
 function Asidebar() {
   const [open, SetOpen] = useState(false);
 
