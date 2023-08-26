@@ -9,7 +9,7 @@ function Blogs() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-  axios.get(`http://localhost:3000/api/post`)
+  axios.get(https://fullstac-next-js-clone-eiet.vercel.app/api/post`)
   .then((res)=>setPosts(res.data))
   .catch((err)=>console.log(err))
 
