@@ -6,7 +6,7 @@ function Doc() {
   const [datas, setContent] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/content")
+      .get("https://fullstac-next-js-clone-eiet.vercel.app/api/content")
       .then((response) => setContent(response.data))
       .catch((error) => console.log(error));
   }, []);
