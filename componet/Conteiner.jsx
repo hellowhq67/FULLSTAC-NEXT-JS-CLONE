@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import styles from "@/styles/Docs.module.css";
-import SideConetet from "./SideConetet";
-import Doc from "./Doc";
+import styles from "../styles/Docs.module.css";
+
 function Conteiner({ slug, infos }) {
   useEffect(() => {}, []);
   return (
@@ -12,7 +11,7 @@ function Conteiner({ slug, infos }) {
         {infos&&
           infos.map((x) => (
             <>
-            <div className={styles.contentCol}> 
+            <div key={x.id} className={styles.contentCol}> 
 
             <p className={styles.title}>{x.title}</p>
               <p className={styles.p}>Node.js 16.8 or later.</p>
