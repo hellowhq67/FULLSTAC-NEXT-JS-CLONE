@@ -1,11 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { TbMenu } from "react-icons/tb";
-import {AiFillCaretUp, AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
-import styles from "@/styles/Nav.module.css";
-import Search from "@/componet/Search";
-import Image from "next/image";
+import styles from "../styles/Nav.module.css";
+import Search from "../componet/Search";
+
 
 function Navbar() {
   const [active, setActive] = useState(false);
@@ -27,7 +25,6 @@ function Navbar() {
       <nav className="app-flex-env nav">
         <div className="app-flex">
           <Link href="/" className="app-flex">
-            <AiFillCaretUp style={{fontSize:"40px",color:"black" ,marginRight:"20px"}}/>
             <svg
               className={styles.logo}
               xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +42,18 @@ function Navbar() {
             </svg>
           </Link>
           <ul className={`app-nav-links ${active ? "active" : ""}`}>
-            <AiOutlineClose className={styles.close} onClick={handeclose} />
+            <svg
+              className={styles.close}
+              onClick={handeclose}
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-x"
+              viewBox="0 0 16 16"
+            >
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
             <li>
               <Link href="">Showcase</Link>
             </li>
@@ -64,23 +72,47 @@ function Navbar() {
           </ul>
         </div>
 
-       
         <div className="btn-col app-flex">
-        <div onClick={handelsearch} className={styles.search}>
-          {" "}
-          <span className={styles.srctext}>Search documentation...</span>
-        </div>
+          <div onClick={handelsearch} className={styles.search}>
+            {" "}
+            <span className={styles.srctext}>Search documentation...</span>
+          </div>
           <button className="btn btn-2">Deploy</button>
           <button className="btn btn-1">Learn</button>
         </div>
         <div className="app-flex mobilemenu">
-          <TbMenu  className="icons" onClick={handelNav} />
+          <svg
+            className="icons"
+            onClick={handelNav}
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-justify"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
 
-          <AiOutlineSearch className="icons"  onClick={handelsearch} />
+          <svg
+            className="icons"
+            onClick={handelsearch}
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
         </div>
       </nav>
 
-      <Search isOpen={isOpen}  close={closesearch}/>
+      <Search isOpen={isOpen} close={closesearch} />
     </>
   );
 }
