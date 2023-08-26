@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import styles from "@/styles/Blog.module.css";
+import styles from "../styles/Blog.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,7 +25,7 @@ function Blogs() {
       <div className=" p-10 my-10 app-flex-env app-media-query">
         {posts.map((x) => {
           return (
-            <div className={styles.blogcard}>
+            <div key={x.id} className={styles.blogcard}>
               <Link className={styles.image} href="">
                 <img src={x.image} />
               </Link>
