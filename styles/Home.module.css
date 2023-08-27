@@ -31,3 +31,16 @@
   font-weight:bold;
   color: var(--gray10);
 }
+@media (max-width:750px) {
+  .title{
+    font-size: 3rem;
+     text-align: center;
+  }
+  .apphome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+  }
+}
