@@ -17,6 +17,7 @@
   --border-radius: 6px;
 }
 
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -89,7 +90,7 @@ body {
 }
 .app-col-down-str {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 }
@@ -186,7 +187,7 @@ body {
   padding: 2rem;
   overflow: scroll;
 }
-.mobileMenu {
+.aside-flter-icon {
   display: none;
 }
 
@@ -207,7 +208,7 @@ body {
 }
 
 @media (max-width: 750px) {
-  .mobileMenu {
+  .aside-flter-icon {
     display: block;
     position: fixed;
     top: 7%;
@@ -236,7 +237,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--gray1);
-    align-items: start;
+    align-items: flex-start;
     width: 100%;
     height: 70vh;
     justify-content: flex-start;
