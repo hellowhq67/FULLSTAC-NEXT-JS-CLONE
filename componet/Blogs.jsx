@@ -15,7 +15,7 @@ function Blogs() {
 
   }, []);
   return (
-    <section>
+    <section className={styles.appCol} >
       <h1 className={styles.heading}>
         What's in Next.js?{" "}
         <span className={styles.subheading}>
