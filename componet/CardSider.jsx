@@ -1,10 +1,10 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination,Autoplay,Navigation } from "swiper";
-import styles from "@/styles/Section.module.css";
+import styles from '../styles/Section.module.css'
 function CardSider() {
   const CardData = [
     {
@@ -30,23 +30,23 @@ function CardSider() {
         delay: 2000,
         disableOnInteraction: false,
       }}
-        slidesPerView={2}
-        spaceBetween={10}
+        slidesPerView={1}
+        spaceBetween={0}
         pagination={{
           clickable:true,
         }}
         breakpoints={{
           640: {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 20,
           },
           768: {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 2,
-            spaceBetween: 10,
+            slidesPerView: 1,
+            spaceBetween: 20,
           },
         }}
         navigation={true}
@@ -57,11 +57,11 @@ function CardSider() {
           return (
             <>
               <SwiperSlide>
-                <div className={styles.card}>
+                <div key={x.title} className={styles.card}>
                   <img src={x.img} alt="" />
                   <div className="app-col-down-str p-10">
                     <h2 className={styles.cardTitle}>{x.title}</h2>
-                    <p className={styles.cardDesc}>{x.title}</p>
+                    <p className={styles.cardDesc}>{x.des}</p>
                   </div>
                 </div>
               </SwiperSlide>
