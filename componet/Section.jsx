@@ -32,15 +32,15 @@ function Section() {
   ];
 
   return (
-    <section className={`  ${styles.section}`}>
+    <section className={styles.section}>
       <h1 className={styles.heading}>
         Get started in seconds
         <span className={styles.span}>Deploy Next.js to Vercel</span>
       </h1>
       <div className={styles.border}></div>
-      <div className="app-flex app-col-rev ">
+      <div className={styles.conteiner}>
         <div className={`app-col-down-str ${styles.contentCol}`}>
-          <ul className={`app-flex mx-20 ${styles.linkCol}`}>
+          <ul className={`app-flex mx-10 ${styles.linkCol}`}>
             {data.map((x) => {
               return (
                 <li
@@ -77,10 +77,8 @@ function Section() {
           </button>
         </div>
 
-        <div>
-          <div className={styles.cardCol}>
-            <CardSider />
-          </div>
+        <div className={styles.cardCol}>
+         <CardSider/>
         </div>
       </div>
     </section>
